@@ -12,10 +12,12 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.gumjoe.pycharmllmexplain.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <!--<toolWindow factoryClass="com.github.gumjoe.aigenerateddocsintellij.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>-->
+        <intentionAction>
+            <className>com.github.gumjoe.pycharmllmexplain.intentions.OpenAiExplain</className>
+            <category>Documentation</category>
+        </intentionAction>
+        <notificationGroup displayType="BALLOON" id="OpenAIPluginErrors" />
     </extensions>
 
-    <applicationListeners>
-        <listener class="com.github.gumjoe.pycharmllmexplain.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
 </idea-plugin>

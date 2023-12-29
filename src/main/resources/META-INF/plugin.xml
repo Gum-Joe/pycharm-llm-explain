@@ -6,6 +6,9 @@
 
     <depends>com.intellij.modules.platform</depends>
 
+    <!-- Requires the python plugin to run -->
+    <depends>com.intellij.modules.python</depends>
+
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
